@@ -1,24 +1,31 @@
 import React, {useEffect, useState} from "react";
 import CarForm from "./CarForm";
 
-function forSale () {
+function ForSale () {
     const [cars, setCars] = useState([])
 
-    // useEffect(() => {
-    //     fetch("link to database for the GET call")
-    // })
+    useEffect(() => {
+        fetch("http://localhost:9292/cars")
+        .then((r) => r.json())
+        .then((cars) =>setCars(cars))
+        .catch((error) => console.log(error))
+    }, [])
+
+    function handleCarSubmit(newCar) {
+        setCars([...cars, newCar])
+    }
+
     
     return (
         <div className="search_div">
-            <h1 className="search-header">Search for your next car!</h1>
-            <h2 className="search-second-header">Please use our state of the art database to search through and see who has your car of 
-            your dreams and how many owners that car has had!</h2>
-            <CarForm />
+            <h1 className="search-header">Sell your car!</h1>
+            <h2 className="search-second-header">Please fill out our form to add your car to our database!</h2>
+            <CarForm carArray={cars} handleCarSubmit={handleCarSubmit}/>
         </div>
     )
 }
 
-export default forSale
+export default ForSale
 
 //on this page we want to allow people to see the cars in our area and post cars for sale and see who has owned these cars
 // get request to get all the data
