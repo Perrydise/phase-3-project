@@ -87,7 +87,7 @@ function CarItem ({ id, price, model, make, year, color, dealership, handleDelet
                     </li>
                     <li key={id+"-color"}>
                         <label for="color">Color: </label>
-                        <input type="text" name="color" readOnly={showForm} value={formColor} onChange={handleColor}/>
+                        <input className="input-box" type="text" name="color" readOnly={showForm} value={formColor} onChange={handleColor}/>
                     </li>
                     <li key={id+"-year"}>
                         <label for="year">Year: </label>
