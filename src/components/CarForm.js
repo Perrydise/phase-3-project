@@ -1,12 +1,22 @@
 import React, {useState} from "react";
 
-function carForm ({ onCarFormSubmit }) {
-    const [price, setPrice] = useState(" ")
-    const [model, setModel] = useState(" ")
-    const [color, setColor] = useState(" ")
-    const [make, setMake] = useState(" ")
-    const [year, setYear] = useState(" ")
-    const [dealership, setDealership] = useState(" ")
+
+function CarForm ({ onCarFormSubmit, dealers }) {
+    const [price, setPrice] = useState("")
+    const [model, setModel] = useState("")
+    const [color, setColor] = useState("")
+    const [make, setMake] = useState("")
+    const [year, setYear] = useState("")
+    const [dealership, setDealership] = useState("")
+    
+
+    const dealerOptions = dealers.map((element) => {
+        const id = element.id
+        const name = element.name
+        return (
+            <option value={id} key={id}>{name}</option>
+        )
+    })
 
     function handlePrice(event) {
         setPrice(event.target.value)
@@ -17,14 +27,15 @@ function carForm ({ onCarFormSubmit }) {
     }
 
     function handleColor(event) {
-        setColor(event.target.vale)
+        setColor(event.target.value)
     }
 
     function handleMake(event) {
-        setMake(event.target.vale)
+        setMake(event.target.value)
     }
 
-    function handleDealership(event) {
+    function handleDealerClick(event) {
+        console.log(event.target.value)
         setDealership(event.target.value)
     }
 
@@ -49,9 +60,10 @@ function carForm ({ onCarFormSubmit }) {
             },
             body: JSON.stringify(newCar)
         })
+        .then((r) => console.log(r))
+        .catch((error) => console.log(error))
         onCarFormSubmit(newCar)
         setColor("")
-        setDealership("")
         setMake("")
         setModel("")
         setPrice("")
@@ -81,12 +93,15 @@ function carForm ({ onCarFormSubmit }) {
                 <input className="year-input" type="text" name="Year" value={year} onChange={handleYear}/>
             </div>
             <div className="dealership-div">
-                <label for="dealership">Dealership</label>
-                <input className="dealership-input" type="text" name="dealership" vale={dealership} onChange={handleDealership}/>
+            <label for="dealerships">Choose a Dealership: </label>
+            <select name="dealerships" id="dealerships" onChange={handleDealerClick}>
+                {dealerOptions}
+            </select>
             </div>
-            <input type="submit" value="Add for sale"/>
+            <input type="submit" value="Add for sale"/>            
         </form>
+        
     )
 }
 
-export default carForm
+export default CarForm

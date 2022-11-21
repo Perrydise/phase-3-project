@@ -1,7 +1,7 @@
 import Home from './Home';
 import ForSale from './ForSale';
 import Navbar from './NavBar';
-import CarDisplay from './carDisplay';
+import CarDisplay from './CarDisplay';
 import { Routes, Route } from "react-router-dom"
 
 function App() {

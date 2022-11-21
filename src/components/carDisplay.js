@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from "react";
+import CarItem from "./CarItem";
 
 function CarDisplay() {
     const [cars, setCars] = useState([])
@@ -19,7 +20,16 @@ function CarDisplay() {
         setCars(updatedCarList)
     }
 
-    const carDataDisplay = cars.map((element) => { 
+    function handleUpdateCar(updatedCarId){
+        const updatedCarList = cars.filter((car) => {
+            return updatedCarId != car.id
+        }) 
+        setCars(updatedCarList)
+    }
+
+    
+
+    const carDataDisplay = cars.map((element, index) => { 
         console.log(cars)
         const id = element.id
         const price = element.price
@@ -28,20 +38,9 @@ function CarDisplay() {
         const year = element.year
         const color = element.color
         const dealership = element.dealership_name
-        return (
-            <div className="car-display">
-                <ul>
-                    <li key={id}>Make: {make}</li>
-                    <li key={id}>Model: {model}</li>
-                    <li key={id}>Color: {color}</li>
-                    <li key={id}>Year: {year}</li>
-                    <li key={id}>Price: {price}</li>
-                    <li key={id}>Dealership: {dealership}</li>
-                </ul>
-                <button onClick={handleDeleteCar}>Delete</button>
-            </div>
-        )
-
+        return (            
+        <CarItem key={index} id={id} price={price} model={model} make={make} year={year} color={color} dealership={dealership} handleDeleteCar={handleDeleteCar} handleUpdateCar={handleUpdateCar}/>                
+        )     
     })
 
     return (
