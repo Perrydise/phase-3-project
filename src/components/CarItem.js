@@ -41,7 +41,6 @@ function CarItem ({ id, price, model, make, year, color, dealership, handleDelet
     }
 
     function handlePatchSubmit(event) {
-        // event.preventDefault()
         setShowForm(true)
         console.log(
             JSON.stringify({
@@ -74,7 +73,6 @@ function CarItem ({ id, price, model, make, year, color, dealership, handleDelet
     }
 
     return (
-        // <form className="patch-form" >
             <div className="car-item-display" >
                 <ul>
                     <li key={id+"-make"}>
@@ -106,7 +104,6 @@ function CarItem ({ id, price, model, make, year, color, dealership, handleDelet
                 <button onClick={handlePatchSubmit} disabled={showForm} >Submit Change</button>
                 
             </div>
-        // </form>
     )
 }
 

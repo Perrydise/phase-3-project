@@ -2,23 +2,6 @@ import React, {useState, useEffect} from "react";
 
 function DealerForm({ onDealerFormSubmit }) {
     const [dealer, setDealer] = useState("")
-    // const [showForm, setShowForm] = useState(false)
-
-    // function onClick (){
-    //     setShowForm(true)
-    // }
-
-    // showForm = () => {
-    //     return (
-    //         <form className="dealer-form" onSubmit={handleDealerSubmit}>
-    //         <div className="dealer-div">
-    //             <label for="dealer">Price:</label>
-    //             <input className="dealer-box" type="text" name="Dealer" value={dealer} onChange={handleName}/>
-    //         </div>
-    //         <input type="submit" value="Add Dealership"/>
-    //     </form>
-    //     )
-    // }
 
     function handleName(event) {
         setDealer(event.target.value)
@@ -48,12 +31,7 @@ function DealerForm({ onDealerFormSubmit }) {
             </div>
             <input type="submit" value="Add Dealership"/>
             {/* <button onClick={() => setShowForm(true)}>Add Dealer</button> */}
-        </form>
-
-        // <div className="dealer-form-div">
-            
-        // </div>
-
+        </form>        
     )
 }
 

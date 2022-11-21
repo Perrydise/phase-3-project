@@ -7,7 +7,6 @@ function CarDisplay() {
     useEffect(() => {
         fetch("http://localhost:9292/cars")
         .then((r) => r.json())
-        // .then((cars) => console.log(cars))
         .then((cars) => setCars(cars))
         .catch((error) => console.log(error))
     }, [])
@@ -52,4 +51,3 @@ function CarDisplay() {
 
 export default CarDisplay
 
-//display all the cars for sale and allow people to click delete on the car to shown its bought
