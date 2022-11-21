@@ -91,11 +91,11 @@ function CarItem ({ id, price, model, make, year, color, dealership, handleDelet
                     </li>
                     <li key={id+"-year"}>
                         <label for="year">Year: </label>
-                        <input type="text" name="year" readOnly={showForm} value={formYear} onChange={handleYear}/>
+                        <input className="input-box" type="text" name="year" readOnly={showForm} value={formYear} onChange={handleYear}/>
                     </li>
                     <li key={id+"-price"}>
                         <label for="price">Price: </label>
-                        <input type="text" name="price" readOnly={showForm} value={formPrice} onChange={handlePrice}/>
+                        <input className="input-box" type="text" name="price" readOnly={showForm} value={formPrice} onChange={handlePrice}/>
                     </li>
                     <li key={id+"-dealership"}>
                         Dealership: {dealership}                      
