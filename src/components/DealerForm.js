@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 
 function DealerForm({ onDealerFormSubmit }) {
     const [dealer, setDealer] = useState("")
@@ -30,7 +30,6 @@ function DealerForm({ onDealerFormSubmit }) {
                 <input className="dealer-box" type="text" name="Dealer" value={dealer} onChange={handleName}/>
             </div>
             <input type="submit" value="Add Dealership"/>
-            {/* <button onClick={() => setShowForm(true)}>Add Dealer</button> */}
         </form>        
     )
 }

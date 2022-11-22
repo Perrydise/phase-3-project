@@ -1,71 +1,76 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # phase-3-project
+
+# The used car verse
+
+The mission of this website is to allow bring the web searching for used cars into one place.  With the vast range of dealerships and other car companys out there all with there own websites, this site allows everyone who is looking for or selling a used car to travel to one place where they are all stored.
+
+# The Connections
+
+The way our website tops all others is by allowing our cars in the database to connect to the dealership they belong to so theres no more scavanging site by site to find the best deal.
+
+## The Home Page
+
+A home page is what grabs the users attention and tells them everything they need to know about what they will be getting themselves into when they explore the rest of the page.  With a welcomeing title and a list of what users can expect upon entering the site, the home page is a very welcoming place to land on.
+
+<br>
+
+<br>
+
+# The Form Page
+
+The design of this page is to be clean and brief.  With a short description of what the form on the page does is all that is needed to not over flood the user with info.  The form asks for all the important info of whats needed when posting a car for sale and thats the price, make, model, color, and the dealership it belongs to.  The dealership portion of this is my favorite part because when the user submits there car it connects the car to the dealership in the backend showing that theres a relationship between the two.  Along side the car form there is also a dealer form.  If your dealership is not shown in the dropdown menu simply click the dealer form button beneath the form and you will have the ability to enter in your dealers name and after a click of the submit button the you will be able to select your newly added dealer in the dropdown screen.
+
+<br>
+
+<br>
+
+# The Display Page
+
+The display page is simply what it is.  Once your car form has been filled out and the dealer has been selected, after the click of a submit your car will be added to the display page with all the info you just filled out.
+
+<br>
+
+<br>
+
+# How To Run
+
+-Clone repository onto your local device
+-Enter into the folder on your device and run 
+
+```bash
+code .
+```
+-Once the app has opened in your code editor enter into the terminal and run the JSON file using the command
+
+```bash
+json-server --watch db.json
+```
+
+-Next start the from end by entering these two commands into a NEW terminal
+
+```bash
+npm install
+```
+
+```bash
+npm start
+```
+-Once these two commands have been entered the webpage will pop up in your browser! Enjoy
+
+# Credits
+
+During the build of this app, css desgins were used from BootStrap.
+
+# License
+
+#License
+
+MIT License
+
+Copyright (c) [2022] [Perry Jorss]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

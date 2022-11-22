@@ -44,6 +44,7 @@ function CarDisplay() {
 
     return (
         <div className="car-display-div">
+            <h3 className="display-header">Take look at our cars to see what fits you best!</h3>
             {carDataDisplay}
         </div>
     )
