@@ -74,7 +74,7 @@ function CarItem ({ id, price, model, make, year, color, dealership, handleDelet
 
     return (
             <div className="car-item-display" >
-                <ul>
+                <ul className="list-display">
                     <li key={id+"-make"}>
                         <label for="Make">Make: </label>
                         <input className="input-box" type="text" name="make" readOnly={showForm} value={formMake} onChange={handleMake}/>

@@ -13,7 +13,7 @@ The way our website tops all others is by allowing our cars in the database to c
 A home page is what grabs the users attention and tells them everything they need to know about what they will be getting themselves into when they explore the rest of the page.  With a welcomeing title and a list of what users can expect upon entering the site, the home page is a very welcoming place to land on.
 
 <br>
-
+<img src=C:\Users\pjors\OneDrive\Pictures\home.screen >
 <br>
 
 # The Form Page
@@ -21,7 +21,7 @@ A home page is what grabs the users attention and tells them everything they nee
 The design of this page is to be clean and brief.  With a short description of what the form on the page does is all that is needed to not over flood the user with info.  The form asks for all the important info of whats needed when posting a car for sale and thats the price, make, model, color, and the dealership it belongs to.  The dealership portion of this is my favorite part because when the user submits there car it connects the car to the dealership in the backend showing that theres a relationship between the two.  Along side the car form there is also a dealer form.  If your dealership is not shown in the dropdown menu simply click the dealer form button beneath the form and you will have the ability to enter in your dealers name and after a click of the submit button the you will be able to select your newly added dealer in the dropdown screen.
 
 <br>
-
+<img src=C:\Users\pjors\OneDrive\form.screen >
 <br>
 
 # The Display Page
@@ -29,7 +29,7 @@ The design of this page is to be clean and brief.  With a short description of w
 The display page is simply what it is.  Once your car form has been filled out and the dealer has been selected, after the click of a submit your car will be added to the display page with all the info you just filled out.
 
 <br>
-
+<img src=C:\Users\pjors\OneDrive\Pictures\display.page >
 <br>
 
 # How To Run
